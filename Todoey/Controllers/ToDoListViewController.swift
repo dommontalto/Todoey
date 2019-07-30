@@ -55,12 +55,7 @@ class ToDoListViewController: UITableViewController {
             
             cell.textLabel?.text = item.title
             
-            
-            if itemArray[indexPath.row].done == true {
-                cell.accessoryType = .checkmark
-            }else{
-                cell.accessoryType = .none
-            }
+            cell.accessoryType = item.done ? .checkmark : .none
             
             return cell
     }
