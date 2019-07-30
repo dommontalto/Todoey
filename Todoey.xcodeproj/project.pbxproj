@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		787B77D322F03F3600AA70D6 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787B77D222F03F3600AA70D6 /* Item.swift */; };
 		F2D322EB22C3F08800CEEE7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D322EA22C3F08800CEEE7F /* AppDelegate.swift */; };
 		F2D322ED22C3F08800CEEE7F /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D322EC22C3F08800CEEE7F /* ToDoListViewController.swift */; };
 		F2D322F022C3F08800CEEE7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2D322EE22C3F08800CEEE7F /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		787B77D222F03F3600AA70D6 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		F2D322E722C3F08800CEEE7F /* Todoey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todoey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2D322EA22C3F08800CEEE7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2D322EC22C3F08800CEEE7F /* ToDoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +37,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		787B77D422F03F3F00AA70D6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				787B77D222F03F3600AA70D6 /* Item.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		787B77D522F03F6900AA70D6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F2D322EC22C3F08800CEEE7F /* ToDoListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		787B77D622F03F7300AA70D6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F2D322F322C3F08A00CEEE7F /* LaunchScreen.storyboard */,
+				F2D322EA22C3F08800CEEE7F /* AppDelegate.swift */,
+				F2D322F122C3F08A00CEEE7F /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		787B77D722F03F8B00AA70D6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F2D322EE22C3F08800CEEE7F /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		F2D322DE22C3F08800CEEE7F = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +90,11 @@
 		F2D322E922C3F08800CEEE7F /* Todoey */ = {
 			isa = PBXGroup;
 			children = (
-				F2D322EA22C3F08800CEEE7F /* AppDelegate.swift */,
-				F2D322EC22C3F08800CEEE7F /* ToDoListViewController.swift */,
-				F2D322EE22C3F08800CEEE7F /* Main.storyboard */,
-				F2D322F122C3F08A00CEEE7F /* Assets.xcassets */,
-				F2D322F322C3F08A00CEEE7F /* LaunchScreen.storyboard */,
 				F2D322F622C3F08A00CEEE7F /* Info.plist */,
+				787B77D722F03F8B00AA70D6 /* Views */,
+				787B77D622F03F7300AA70D6 /* Supporting Files */,
+				787B77D522F03F6900AA70D6 /* Controllers */,
+				787B77D422F03F3F00AA70D6 /* Models */,
 			);
 			path = Todoey;
 			sourceTree = "<group>";
@@ -136,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2D322ED22C3F08800CEEE7F /* ToDoListViewController.swift in Sources */,
+				787B77D322F03F3600AA70D6 /* Item.swift in Sources */,
 				F2D322EB22C3F08800CEEE7F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,7 +319,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 28LCYBEPQ2;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Todoey/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,7 +337,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 28LCYBEPQ2;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Todoey/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
